@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; connect-src https://script.google.com https://script.googleusercontent.com; manifest-src 'self'; form-action 'none'; base-uri 'none'">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Computer Basics - One Shot Revision</title>
+<meta name="theme-color" content="#001b63">
+<link rel="manifest" href="manifest.json"><link rel="icon" href="assets/icon-192.png">
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+<section id="login" class="loginwrap" hidden>
+  <form id="lform" class="logincard" autocomplete="on" novalidate>
+    <img src="assets/icon-192.png" alt="" width="72" height="72">
+    <p class="eyebrow">GD Tech Academy</p>
+    <h1>Computer Basics<br>One Shot Revision</h1>
+    <p class="muted">Private study notes. Sign in with the username and password given to you.</p>
+    <p id="lmsg" class="msg" role="alert" hidden></p>
+    <label for="lu">Username</label>
+    <input id="lu" name="username" type="text" autocomplete="username" autocapitalize="none" autocorrect="off" spellcheck="false" maxlength="64" required>
+    <label for="lp">Password</label>
+    <div class="pwrow"><input id="lp" name="password" type="password" autocomplete="current-password" maxlength="128" required><button type="button" id="lshow" class="btn alt sm" aria-pressed="false">Show</button></div>
+    <button id="lgo" class="btn wide" type="submit">Sign in</button>
+    <p class="small muted">No account? Ask the owner of this site for one.</p>
+  </form>
+</section>
+<div id="app" hidden>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap bar">
+  <a class="brand" href="#/"><img src="assets/icon-192.png" alt="" width="36" height="36"><span><b>Computer Basics</b><small>One Shot Revision</small></span></a>
+  <nav id="nav" aria-label="Main"><a href="#/" data-r="home">Topics</a><a href="#/quiz" data-r="quiz">Quiz</a><a href="#/glossary" data-r="glossary">Glossary</a><a href="#/print" data-r="print">Print all</a><a href="#/admin" data-r="admin" id="navadmin" hidden>Admin</a><button type="button" id="logout" class="navbtn">Sign out</button></nav>
+</div></header>
+<main id="main" class="wrap" tabindex="-1"></main>
+<footer class="foot"><div class="wrap"><p>GD Tech Academy &middot; Study notes built from handwritten Computer Basics pages.</p><p class="small" id="lic"></p></div></footer>
+</div>
+<noscript><p style="padding:20px">This site needs JavaScript.</p></noscript>
+<script src="js/config.js"></script><script src="js/app.js"></script>
+</body></html>
